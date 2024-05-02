@@ -1,0 +1,10 @@
+from launch import LaunchDescription
+from launch_ros.actions import Node
+
+def generate_Launch_Description():
+    return LaunchDescription([
+        Node(
+            package="msg_subscriber",
+            executable="msg_subscriber_node",
+            output="screen")
+    ])
